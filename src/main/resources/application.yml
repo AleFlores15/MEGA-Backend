@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: inventory-backend
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/prueba}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:1234}
+    jpa:
+      hibernate:
+        ddl-auto: none
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081
